@@ -13,6 +13,20 @@ zookeeper:zookeeper-3.4.5
 kafka:kafka_2.11
 ```
 
+zookeeper添加到环境变量中
+
+```
+export JAVA_HOME=/home/Java/jdk1.8.0_141
+export JRE_HOME=$JAVA_HOME/jre
+export CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib
+export ZOOKEEPER_HOME=/usr/local/zookeeper-3.4.5
+export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$SCALA_HOME/bin:$ZOOKEEPER_HOME/bin
+```
+
+更新环境变量
+
+`source /etc/profile`
+
 zookeeper配置
 
 复制zoo_sample.cfg到zoo.cfg：
@@ -88,4 +102,8 @@ jps查看
 ```
 
 zookeeper启动完成
+
+
+
+
 
