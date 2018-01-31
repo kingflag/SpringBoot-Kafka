@@ -79,7 +79,7 @@ public class KafkaProducer {
 
 ***建立一个restful模拟发送***
 
-测试地址( //<http://localhost:8080/kafka/send.do?key=2&data=king-test-message>)
+测试地址( <http://localhost:8080/kafka/send.do?key=2&data=king-test-message>)
 
 ~~~
 package com.king.simple.springbootkafka.controller;
