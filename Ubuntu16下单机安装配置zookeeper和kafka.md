@@ -374,6 +374,17 @@ SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
 
 
 
+#### jps查看服务
+
+```
+root@kingflag:/usr/local/kafka_2.11# jps
+3607 Kafka
+3293 QuorumPeerMain
+5455 Jps
+```
+
+
+
 **创建Kafka主题** - Kafka提供了一个名为 "kafka-topics.sh" 的命令行实用程序，用于在服务器上创建主题。
 
 **语法**
