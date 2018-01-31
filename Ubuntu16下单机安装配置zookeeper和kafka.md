@@ -385,8 +385,7 @@ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 -
 **示例**
 
 ```
-bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1   
---partitions 1 --topic Hello-Kafka
+bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic Hello-Kafka
 ```
 输出:
 
