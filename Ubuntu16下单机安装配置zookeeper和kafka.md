@@ -374,6 +374,54 @@ SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
 
 
 
+**创建Kafka主题** - Kafka提供了一个名为 "kafka-topics.sh" 的命令行实用程序，用于在服务器上创建主题。
+
+**语法**
+
+```
+bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic topic-name
+```
+
+**示例**
+
+```
+bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1   
+--partitions 1 --topic Hello-Kafka
+```
+输出:
+
+```
+root@kingflag:/usr/local/kafka_2.11# bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic Hello-Kafka
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/local/kafka_2.11/libs/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/local/kafka_2.11/libs/slf4j-simple-1.7.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Created topic "Hello-Kafka".
+```
+
+#### 主题列表
+
+要获取Kafka服务器中的主题列表，可以使用以下命令 -
+
+**语法**
+
+```
+bin/kafka-topics.sh --list --zookeeper localhost:2181
+```
+
+输出:
+
+```
+root@kingflag:/usr/local/kafka_2.11# bin/kafka-topics.sh --list --zookeeper localhost:2181
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/local/kafka_2.11/libs/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/local/kafka_2.11/libs/slf4j-simple-1.7.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Hello-Kafka
+```
+
 
 
 
